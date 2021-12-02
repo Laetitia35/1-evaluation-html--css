@@ -3,37 +3,40 @@
     padding: 0px;
     font-family: Avenir, sans-serif;
 }
-body{
+
+
+body {
+    
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     width: 100%;
 }
+   
 header {
-    color: blue;
-    background-color: cyan;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
     text-align: center;
-    
-    
 
 }
+
 nav ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    float: left;
     
 }
 
 
 li {
-  float: left;  
+ display: inline-block;
    
 }
 
 li a {
-    display: block;
+    display: inline;
     color: white;
-    text-align: end;
     padding: 8px 10px;
     text-decoration : none;
     
@@ -93,17 +96,40 @@ footer {
 
 .parent {
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-between;
     
 }
+.enfant-image {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.enfant-texte {
+    justify-content: center;
+    text-align: center;
+
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  
+  }
+  .contact-asso {
+     padding: 30px;
+    
+  }
 
 @media screen and (max-width: 1280px) {
         
     .container {
        flex-wrap: wrap;
        justify-content: center;
-    
+        margin: 20px;
+       
     } 
 }   
 @media screen and (max-width:1024px) {
