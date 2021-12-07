@@ -1,18 +1,19 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Avenir, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
 }
 
 
 body {
     
-    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     width: 100%;
 }
    
 header {
+
     background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
     text-align: center;
 
@@ -24,13 +25,11 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    float: left;
-    
+    float: left;    
 }
 
-
 li {
- display: inline-block;
+    display: inline-block;
    
 }
 
@@ -41,29 +40,49 @@ li a {
     text-decoration : none;
     
 }
+
 .container {
     display: flex ;
-    justify-content: space-between;
-    margin: 15px;
-    
+    justify-content: center; 
+    margin: 15px;   
 }
+
 h1 {
     text-align: center;
-    color:rgb(46, 12, 172)
-    
+    color:rgb(205, 239, 245);
+    font-size: 2em;   
 }
+
 h2 {
     text-align: center;
+    color: blue;
+    padding: 15px;
+    
+}
+
+.paragraphe {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    height: auto; 
+    text-align: center;
+    border: 4px solid blue;
+    margin-bottom: 50px;
+
 }
 
 .picture1 {
-    width: 600px;
-    height: 350px;
+    max-width: 500px;
+    max-height: 350px;
 }
 
 .picture2 {
-    width: 600px;
-    height: 350px;
+    max-width: 500px;
+    max-height: 350px;
+}
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .musher {
@@ -78,6 +97,10 @@ article {
     text-align: justify;
 }
 
+.soutiens {
+     text-align: center;
+}
+
 aside {
     padding: 10px;
     margin : 10px;
@@ -86,7 +109,6 @@ aside {
 
 }
 
-
 footer {
     text-align: right;
     padding: 5px;
@@ -94,20 +116,34 @@ footer {
     color: #fff;
 }
 
-.parent {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.enfant-image {
-    padding: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-.enfant-texte {
-    justify-content: center;
+.texte {
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    height: auto; 
     text-align: center;
+    border: 3px solid blue;
+    margin-bottom: 50px;
 
+}
+
+#carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    margin: auto;
+    justify-content: center;
+    text-align: center;    
 }
 
 form {
@@ -117,22 +153,16 @@ form {
     border: 1px solid #CCC;
     border-radius: 1em;
   
-  }
-  .contact-asso {
+}
+
+.contact-asso {
      padding: 30px;
     
-  }
+}
 
-@media screen and (max-width: 1280px) {
-        
-    .container {
-       flex-wrap: wrap;
-       justify-content: center;
-        margin: 20px;
-       
-    } 
-}   
-@media screen and (max-width:1024px) {
+
+
+ @media screen and (max-width:1024px)  { 
     header {
         width: 100%;
     }
@@ -141,7 +171,24 @@ form {
         width: 100%;
         height: 100%;
     }
+
+    .container {
+       flex-wrap: wrap;
+       justify-content: center; 
+       max-width: 100%;
+       height:auto     
+    } 
+
+    .picture1 {
+       width: 100vh;
+      height: 100vh;
+    }
+    
+    .picture2 {
+        width: 100vh;
+        height: 100vh;
+    }
 }
 
-    
+
 

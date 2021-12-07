@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Le refuge des huskies</title>
 </head>
 
@@ -22,25 +25,77 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-  </header>  
+  </header>
+
    <main>
-    <h1> Portes ouvertes le dimanche 14 novembre 2021</h1>
-    <div class= "parents">
-      <div class="enfant-image">
-       <img src="images huskies\huskies-funny.jpg" alt="husky funny" width="600" height="400">
-       <img src="images huskies\.attelage cani-quad.png" alt="attelage quad" width= "600" height="400">
+
+    <h2> Portes ouvertes le dimanche 14 novembre 2021 à partir de 9h</h2>
+    <!--Création d'un caroussel avec Bootstrap-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>      
       </div>
-      <div class="enfant-texte">
-      <p><strong> Venez découvrir les activités pratiquer avec les chiens nordiques.</strong></p>
-      <p>Rencontre avec la meute.
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images huskies\huskies-funny.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images huskies\.attelage cani-quad.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images huskies\kart.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images huskies\meute-husky.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images huskies\puppy-husky.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      <div class="texte">
+       <p><strong> Venez découvrir les activités pratiquer avec les chiens nordiques.</strong></p>
+       <p> Pour les amateurs de sensations, installez-vous sur le karting et laissez-vous emporter par la meute de chiens.
+         Deux parcours sont disponibles : le Noomak tour, grande balade autour du lac et sur la trace d’Unymak, un parcours-découverte 
+         de l’attelage. Le Husky de Sibérie est un habitué du transport en attelage, ces parcours sont également l’occasion de comprendre comment fonctionne la meute, le rôle du chien de tête….</p>
+       <p>Rencontre avec la meute.
         Dans notre nouvelle base, la meute vit désormais en totale liberté dans des parcs arborisés !
         Pour les passionnés ou pour les curieux de la vie de la meute, on vous accompagne avec présentation
         de la vie et du fonctionnement de la meute dans leur milieu naturel.</p>
       </div>
+      <!--Card sans le bouton-->
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images huskies\.attelage cani-quad.png" class="img-fluid rounded-start" alt="cani-quad">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Informations Utiles</h5>
+              <p class="card-text">Cani-rando : 10h à 13h ou 14h à 17h, adulte 25€, enfant 15€. 30 personnes par groupe maximum, encadrement : Diplomée Bejeps.<br> Promenade en attelage Sur la Trace des Loups: 30€ adulte, 20€ moins de 12 ans. </p>
+            </div>
+          </div>
+        </div>
+      </div>
    </div>
   </main>
+
   <footer>
     <p>association à but non lucrative - Tous droits réservés  © 2021 DECRE Laetitia</p>
   </footer>
+
 </body>
 </html>
